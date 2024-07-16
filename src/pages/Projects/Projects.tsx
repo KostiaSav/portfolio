@@ -17,7 +17,7 @@ const projects: IProjectItem[] = [
         },
         date: "2-07-2024",
         image: pdr_project,
-        url: "hpdrpatrol.ca",
+        url: "https://pdrpatrol.ca/",
         type: "Business card website",
     },
     {
