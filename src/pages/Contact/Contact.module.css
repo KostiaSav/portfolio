@@ -1,0 +1,35 @@
+.contact {
+    background-color: #252a34;
+    color: white;
+    height: calc(100vh - 120px);
+    padding: 50px 20px;
+}
+
+.form_contact__list {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.form_contact__list label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-basis: 32%;
+}
+
+.form_contact__list label input, .form_contact__list label textarea, .form_contact__list label select {
+    padding: 15px;
+    outline: none;
+}
+
+.form_contact__list label input:focus, .form_contact__list label textarea:focus {
+    border: 2px solid #e7af03;
+    border-radius: 5px;
+}
+
+.form_contact__list label textarea {
+    resize: vertical;
+    min-height: 200px;
+}

@@ -1,0 +1,50 @@
+.logotype {
+    position: relative;
+    transition: .3s;
+}
+
+.logotype:hover {
+    transform: scale(1.1);
+}
+
+.logotype_left {
+    position: relative;
+}
+
+.logotype_left::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.logotype_right {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to right,
+        #e7af03,
+        #e7af03 50%,
+        white 50%
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: all 0.3s 0.3s ease-in-out;
+}
+
+.logotype:hover .logotype_right {
+    background-position: 0%;
+}
+
+.logotype:hover .logotype_left::before {
+    transform: scaleX(1);
+}
