@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import { variants } from './animations/Animations';
 import Socials from './layouts/Socials/Socials';
+import FreelanceHuntMarker from './components/FreelanceHuntMarker/FreelanceHuntMarker';
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
           </motion.p>
 
           <Socials />
+          <FreelanceHuntMarker />
 
         </div>
       </section>
