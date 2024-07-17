@@ -21,7 +21,7 @@ function App() {
             gap: "10px",
             textAlign: 'center'
           }}>
-            <Link to={'/projects'}>
+            <Link to={'/portfolio/projects'}>
               <button
                 className='btn btn-arrow'
                 style={{
@@ -34,7 +34,7 @@ function App() {
               </button>
             </Link>
 
-            <Link to={'/about'}>
+            <Link to={'/portfolio/about'}>
               <button
                 className='btn btn-light'
                 style={{

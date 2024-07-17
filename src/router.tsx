@@ -34,10 +34,6 @@ const router = createBrowserRouter([
                 path: "/portfolio/about",
                 element: <About />,
             },
-            {
-                path: "*",
-                element: <Error />,
-            }
         ],
         errorElement: <Error />,
     }
