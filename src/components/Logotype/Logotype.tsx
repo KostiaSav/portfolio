@@ -4,7 +4,7 @@ import { ILogotype } from "../../typescript/interfaces";
 
 const Logotype = (props: ILogotype) => {
     return (
-        <Link to={props.to ? props.to : "/"}>
+        <Link to={props.to ? props.to : "/portfolio"}>
             <h2 className={styles.logotype}><span className={styles.logotype_left}>Frontend.</span> <span className={styles.logotype_right}>Portfolio.</span></h2>
         </Link>
     )

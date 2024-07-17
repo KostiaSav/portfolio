@@ -5,15 +5,15 @@ import { ILink } from "../../typescript/interfaces";
 
 const navLinks: ILink[] = [
     {
-        to: "/portfolio",
+        to: "/",
         label: "Home"
     },
     {
-        to: "/projects",
+        to: "/portfolio/projects",
         label: "Projects"
     },
     {
-        to: "/about",
+        to: "/portfolio/about",
         label: "About"
     }
 

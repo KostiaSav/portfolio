@@ -5,7 +5,8 @@
 
     display: flex;
     flex-wrap: wrap;
-    gap: calc((100% - 380px * 3) / 2);
+    /* gap: calc(((100% - 380px * 3 + 20px) / 2)); */
+    gap: 30px;
     row-gap: 90px;
 }
 
@@ -34,5 +35,5 @@
 }
 
 .list_projects__wrapper {
-    margin: 20px 0px 160px;
+    margin: 20px 0px 120px;
 }

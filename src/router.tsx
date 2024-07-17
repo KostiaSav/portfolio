@@ -16,22 +16,22 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <App />,
-                index: true,  // Указывает на индексный маршрут
+                index: true,
             },
             {
                 path: "/portfolio",
                 element: <App />,
             },
             {
-                path: "/projects",
+                path: "/portfolio/projects",
                 element: <Projects />,
             },
             {
-                path: "/contact",
+                path: "/portfolio/contact",
                 element: <Contact />,
             },
             {
-                path: "/about",
+                path: "/portfolio/about",
                 element: <About />,
             },
             {

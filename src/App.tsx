@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import { variants } from './animations/Animations';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faFacebook, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import Socials from './layouts/Socials/Socials';
 
 function App() {
