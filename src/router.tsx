@@ -6,6 +6,7 @@ import Error from "./pages/Error/Error";
 import Projects from "./pages/Projects/Projects";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
 
 const router = createBrowserRouter([
     {
@@ -13,19 +14,32 @@ const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
-                path: "/" && "/portfolio",
+                path: "/",
+                element: <App />,
+                index: true,  // Указывает на индексный маршрут
+            },
+            {
+                path: "/portfolio",
                 element: <App />,
             },
             {
-                path: "/projects/",
-                element: <Projects />
+                path: "/projects",
+                element: <Projects />,
             },
             {
-                path: "/contact/",
-                element: <Contact />
+                path: "/contact",
+                element: <Contact />,
+            },
+            {
+                path: "/about",
+                element: <About />,
+            },
+            {
+                path: "*",
+                element: <Error />,
             }
         ],
-        errorElement: <Error />
+        errorElement: <Error />,
     }
 ]);
 

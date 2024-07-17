@@ -31,7 +31,25 @@ export interface IProjectItem {
     rendered: string;
     protected?: boolean;
   }
+
+  export interface ILogotype {
+    to?: string;
+  }
+
+  export interface ILink {
+    to?: string;
+    label?: string;
+  }
+
+  export interface IListProjects {
+    projects: IProjectItem[];
+    type?: ProjectType;
+  }
   
+  export interface ISocials {
+    type?: SocialsSizeTypes;
+  }
+
   // interface Link {
   //   href: string;
   //   embeddable?: boolean;

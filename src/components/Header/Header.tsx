@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
         <div className={`container ${styles.header__wrapper}`}>
-            <Logotype />
+            <Logotype to="/portfolio"/>
             <Navigation />
         </div>
     </header>

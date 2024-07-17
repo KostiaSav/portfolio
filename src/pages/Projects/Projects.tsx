@@ -3,9 +3,9 @@ import pharma_project from "../../assets/img/pharma.png";
 import nexcent_project from "../../assets/img/nexcent.png";
 import tech_project from "../../assets/img/tech.jpg";
 import pdr_project from "../../assets/img/pdr.jpg";
-import ProjectItem from '../../components/ProjectItem/ProjectItem';
 import { useTranslation } from 'react-i18next';
 import { IProjectItem } from '../../typescript/interfaces';
+import ListProjects from '../../layouts/ListProjects/ListProjects';
 
 const projects: IProjectItem[] = [
     {
@@ -61,22 +61,6 @@ const projects: IProjectItem[] = [
 const Projects = () => {
 
     const { t } = useTranslation();
-    // const [projects, setProjects] = useState<any>([]);
-
-    // const getProject = () => {
-    //     axios.get('http://localhost/wordpress/wp-json/wp/v2/recipe')
-    //         .then(response => {
-    //             setProjects(response.data);
-    //             console.log(response.data);
-    //         })
-    //         .catch(error => {
-    //             console.log(error);
-    //         })
-    // }
-
-    // useEffect(() => {
-    //     getProject();
-    // }, [])
 
     return (
 
@@ -85,23 +69,12 @@ const Projects = () => {
             <section className={styles.projects_wrapper}>
                 <div className="container">
                     <div className={styles.block_title}>
-                        <h1 className={styles.title_block_h1}>{t("Projects")}</h1>
-                        <p className={styles.title_block_p}>{t("Landing pages")}</p>
+                        <h1 className="title_block_h1">{t("Projects")}</h1>
                     </div>
 
-                    <ul className={styles.projects_list}>
-
-
-                        {
-                            projects.map((item: any) => {
-                                return (
-                                    <ProjectItem
-                                        item={item}
-                                    />
-                                )
-                            })
-                        }
-                    </ul>
+                    <ListProjects projects={projects} type="Landing Page"/>
+                    <ListProjects projects={projects} type="Business card website"/>
+                    <ListProjects projects={projects}/>
                 </div>
             </section>
         </>

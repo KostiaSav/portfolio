@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { variants } from './animations/Animations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import Socials from './layouts/Socials/Socials';
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
           <h2 className='hero_title'>{t("Kostiantyn P.")}</h2>
           <h2 className='hero_title'>{t("Frontend Developer")}</h2>
           <div style={{
+            display: "flex",
+            gap: "10px",
             textAlign: 'center'
           }}>
             <Link to={'/projects'}>
@@ -30,6 +33,19 @@ function App() {
 
               >
                 {t('Go to projects')}
+              </button>
+            </Link>
+
+            <Link to={'/about'}>
+              <button
+                className='btn btn-light'
+                style={{
+                  marginTop: "20px",
+                  padding: '15px 25px 15px 15px'
+                }}
+
+              >
+                {t('About')}
               </button>
             </Link>
           </div>
@@ -54,25 +70,7 @@ function App() {
             HTML, CSS, JavaScript, Wordpress, PHP, Wordpress, Laravel
           </motion.p>
 
-          <motion.div 
-            className="socials"
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            transition={{ duration: 1 }}
-          >
-            <a href="https://github.com/KostiaSav">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-
-            <a href="https://www.facebook.com/profile.php?id=61557404589071">
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-
-            <a href="https://t.me/developerKostya">
-              <FontAwesomeIcon icon={faTelegram} />
-            </a>
-          </motion.div>
+          <Socials />
 
         </div>
       </section>
