@@ -7,7 +7,7 @@ const ListProjects = (props: IListProjects) => {
 
     const { t } = useTranslation();
 
-    const filteredProjects = props.type 
+    const filteredProjects = props.type && props.type !== "All projects"
     ? props.projects.filter(project => project.type === props.type) 
     : props.projects;
 

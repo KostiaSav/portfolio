@@ -6,6 +6,9 @@ import pdr_project from "../../assets/img/pdr.jpg";
 import { useTranslation } from 'react-i18next';
 import { IProjectItem } from '../../typescript/interfaces';
 import ListProjects from '../../layouts/ListProjects/ListProjects';
+import ChangerTypeProjects from '../../components/ChangerTypeProjects/ChangerTypeProjects';
+import { useState } from 'react';
+import { IProjectType } from '../../typescript/types';
 
 const projects: IProjectItem[] = [
     {
@@ -62,6 +65,8 @@ const Projects = () => {
 
     const { t } = useTranslation();
 
+    const [type, setType] = useState<IProjectType | undefined>("All projects");
+
     return (
 
         <>
@@ -72,9 +77,9 @@ const Projects = () => {
                         <h1 className="title_block_h1">{t("Projects")}</h1>
                     </div>
 
-                    <ListProjects projects={projects} type="Landing Page"/>
-                    <ListProjects projects={projects} type="Business card website"/>
-                    <ListProjects projects={projects}/>
+                    <ChangerTypeProjects currentType={type} changeType={setType}/>
+
+                    <ListProjects projects={projects} type={type}/>
                 </div>
             </section>
         </>

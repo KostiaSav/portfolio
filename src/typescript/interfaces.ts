@@ -9,6 +9,8 @@
 //     src?: string,
 // }
 
+import { IProjectType, SocialsSizeTypes } from "./types";
+
 export interface IItemProject {
     item: IProjectItem
 }
@@ -19,7 +21,7 @@ export interface IProjectItem {
   date?: string,
   image?: string,
   url?: string,
-  type?: ProjectType,
+  type?: IProjectType,
 }
 
   
@@ -43,12 +45,23 @@ export interface IProjectItem {
 
   export interface IListProjects {
     projects: IProjectItem[];
-    type?: ProjectType;
+    type?: IProjectType;
   }
   
   export interface ISocials {
     type?: SocialsSizeTypes;
   }
+
+  export interface ISkill {
+    label: string;
+    id: string;
+  }
+
+  export interface IChangerTypeProjects {
+    currentType?: IProjectType;
+    changeType: any
+  }
+
 
   // interface Link {
   //   href: string;
