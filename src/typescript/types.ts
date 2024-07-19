@@ -4,8 +4,7 @@ export const projectTypes = [
     "All projects",
     "Landing Page",
     "Business card website",
-    "Personal website",
-    "Corporate website",
+    "Webflow",
     "Online stores"
 ] as const;
 

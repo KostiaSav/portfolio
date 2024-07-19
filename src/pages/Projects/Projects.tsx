@@ -2,6 +2,8 @@ import styles from './Projects.module.css';
 import pharma_project from "../../assets/img/pharma.png";
 import nexcent_project from "../../assets/img/nexcent.png";
 import tech_project from "../../assets/img/tech.jpg";
+import webflow_tech_project from "../../assets/img/webflow_tech.png";
+
 import pdr_project from "../../assets/img/pdr.jpg";
 import { useTranslation } from 'react-i18next';
 import { IProjectItem } from '../../typescript/interfaces';
@@ -58,6 +60,18 @@ const projects: IProjectItem[] = [
         image: tech_project,
         url: "https://kostiasav.github.io/TechCues/",
         type: "Landing Page"
+    },
+    {
+        title: {
+            rendered: "Teach",
+        },
+        content: {
+            rendered: "The first project on Webflow is still far from being completed. There's one more section to build on the site, animations to add, some optimization to do, and full responsiveness to implement."
+        },
+        date: "19-07-2024",
+        image: webflow_tech_project,
+        url: "https://teach-174511.webflow.io/",
+        type: "Webflow"
     },
 ]
 
