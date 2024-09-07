@@ -22,6 +22,7 @@ export const skillsTypes = [
 	'WEBPACK',
 	'PDF',
 	'SWIPER.JS',
+	'WEBFLOW',
 	'VITE',
 ] as const;
 
