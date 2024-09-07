@@ -1,0 +1,68 @@
+.project {
+	margin-top: 50px;
+}
+
+.block {
+	margin: 0px 0px 10px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.wrapper {
+	display: flex;
+	gap: 50px;
+}
+
+.image {
+	flex-basis: 50%;
+}
+
+.content {
+	flex-basis: 50%;
+}
+
+.image img {
+	max-width: 100%;
+}
+
+.title {
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+
+.description {
+	font-size: 22px;
+	line-height: 1.5em;
+	margin: 15px 0px 20px;
+}
+
+.skills {
+	margin-top: 20px;
+}
+
+.skills h3 {
+	font-size: 32px;
+}
+
+.skills_list {
+	display: flex;
+	gap: 15px;
+	list-style: none;
+	margin-left: 0;
+	margin-top: 10px;
+}
+
+.skill {
+	padding: 6px 18px;
+	background-color: black;
+	color: white;
+	font-size: 24px;
+}
+
+.title_section {
+	font-size: 32px;
+	margin: 15px 0px;
+}
