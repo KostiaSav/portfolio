@@ -1,11 +1,11 @@
 .header {
-    background-color: #252a34;
-    color: white;
-    padding: 24px 0px;
+	background-color: #252a34;
+	color: white;
+	padding: 24px 0px;
 }
 
 .header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

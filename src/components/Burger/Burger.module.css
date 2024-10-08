@@ -1,0 +1,59 @@
+@media screen and (min-width: 732px) {
+	.burger_menu {
+		display: none;
+	}
+
+	.masc__burger {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100px;
+		background-color: black;
+	}
+}
+
+.burger_menu {
+	position: relative;
+	width: 30px;
+	height: 30px;
+}
+
+.burger_menu__lines::before,
+.burger_menu__lines::after,
+.burger_menu__lines {
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: #ffffff;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.burger_menu__lines {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.burger_menu__lines::before {
+	content: '';
+	top: -12px;
+}
+.burger_menu__lines::after {
+	content: '';
+	top: 12px;
+}
+
+.active .burger_menu__lines {
+	background-color: transparent;
+}
+.active .burger_menu__lines::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.active .burger_menu__lines::after {
+	top: 0;
+	transform: rotate(-45deg);
+}

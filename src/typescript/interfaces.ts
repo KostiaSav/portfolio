@@ -9,6 +9,7 @@
 //     src?: string,
 // }
 
+import { Dispatch, SetStateAction } from 'react';
 import { IProjectType, SocialsSizeTypes, TSizeReview, TSkill } from './types';
 
 export interface IItemProject {
@@ -98,6 +99,15 @@ export interface ICostComponent {
 
 export interface IDateComponent {
 	date: Date;
+}
+
+export interface IBurgerMenu {
+	isOpen: boolean;
+	toggleBurgerMenu: Dispatch<SetStateAction<boolean>>;
+}
+
+export interface INavigation {
+	isOpen: boolean;
 }
 
 // interface Link {

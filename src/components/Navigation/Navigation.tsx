@@ -1,7 +1,7 @@
 import styles from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ILink } from '../../typescript/interfaces';
+import { ILink, INavigation } from '../../typescript/interfaces';
 import { motion } from 'framer-motion';
 import { variants } from '../../animations/Animations';
 
@@ -24,11 +24,11 @@ const navLinks: ILink[] = [
 	},
 ];
 
-const Navigation = () => {
+const Navigation = ({ isOpen }: INavigation) => {
 	const { t } = useTranslation();
 
 	return (
-		<nav className={styles.navigation}>
+		<nav className={`${styles.navigation} ${isOpen ? styles.active : ''}`}>
 			<ul>
 				{navLinks.map((link, index) => (
 					<motion.li
